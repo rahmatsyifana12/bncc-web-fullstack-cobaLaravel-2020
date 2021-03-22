@@ -14,7 +14,7 @@ use Illuminate\Support\Facades\Route;
 */
 
 Route::get('/', function () {
-    return view('home');
+    return view('table');
 });
 
 Route::get('/register', function () {
@@ -25,4 +25,9 @@ Route::get('/welcome', function () {
     return view('welcome');
 });
 
+Route::get('/data-tables', function () {
+    return view('data-table');
+});
+
 Route::post('/welcome', 'AuthController@req');
+
