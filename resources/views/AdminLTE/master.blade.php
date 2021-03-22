@@ -22,8 +22,8 @@ scratch. This page gets rid of all links and provides the needed markup only.
 <body class="hold-transition sidebar-mini">
 <div class="wrapper">
 
-  @yield('navbar')
-  @yield('sidebar')
+  @include('AdminLTE.partial.navbar')
+  @include('AdminLTE.partial.sidebar')
   <!-- Content Wrapper. Contains page content -->
   <div class="content-wrapper">
     
